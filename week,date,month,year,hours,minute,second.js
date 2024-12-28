@@ -4,8 +4,7 @@ const months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", 
 
 function getDate() {
   const d = new Date();
-  return `${days[d.getDay()]} || ${d.getDate().toString().padStart(2, "0")} ${
-    months[d.getMonth()]
+  return `${days[d.getDay()]} || ${d.getDate().toString().padStart(2, "0")} ${months[d.getMonth()]
   } ${d.getFullYear()} |`;
 }
 
